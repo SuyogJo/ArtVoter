@@ -1,6 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
 
+
+const App = () => {
+  return (
+    <div className='App-header'>
+      <button onClick={() => alert('clicked')}>Click</button>
+    </div>
+  )
+}
+
+
+/*
 function App() {
   return (
     <div className="App">
@@ -21,5 +32,6 @@ function App() {
     </div>
   );
 }
+*/
 
 export default App;
