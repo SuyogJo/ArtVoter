@@ -1,37 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
+import { Button } from "@web3uikit/core";
+import { IPFSInput, ConnectButton } from "@web3uikit/web3";
 
 
 const App = () => {
   return (
-    <div className='App-header'>
-      <button onClick={() => alert('clicked')}>Click</button>
-    </div>
+    <>
+      <div className='App-background'>
+        <div className='App-header'>
+          <div className='App-logo'>
+            <img src={logo} alt="logo"/>
+            ArtVoter
+          </div>
+          <ConnectButton theme="primary" type="button" text="Connect Wallet" />
+        </div>
+        <IPFSInput />
+      </div>
+    </>
   )
 }
-
-
-/*
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
-*/
 
 export default App;
