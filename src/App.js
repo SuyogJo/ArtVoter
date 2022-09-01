@@ -20,14 +20,12 @@ const App = () => {
           <ConnectButton theme="primary" type="button" text="Connect Wallet" />
         </div>
         <div className='title-screen'>Please vote on your favorite art</div>
-        <ArtPieces>
-        percent={Art1}
-        setPercent={setArt1}
-        art={"Art1"}
-      </ArtPieces>
+          <div className='list'> 
+            <ArtPieces percent={Art1} setPercent={setArt1} art={"Art1"}/>
+          </div> 
       </div>
 
-      
+
     </>
   )
 }
