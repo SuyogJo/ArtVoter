@@ -9,6 +9,8 @@ import ArtPieces from "./components/ArtPieces.js"
 const App = () => {
   
   const [Art1, setArt1] = useState(50);
+  const [Art2, setArt2] = useState(50);
+  const [Art3, setArt3] = useState(50);
   return (
     <>
       <div className='App-background'>
@@ -21,7 +23,9 @@ const App = () => {
         </div>
         <div className='title-screen'>Please vote on your favorite art</div>
           <div className='list'> 
-            <ArtPieces percent={Art1} setPercent={setArt1} art={"Art1"}/>
+            <ArtPieces percent={Art1} setPercent={setArt1} art={"Art 1"}/>
+            <ArtPieces percent={Art2} setPercent={setArt2} art={"Art 2"}/>
+            <ArtPieces percent={Art3} setPercent={setArt3} art={"Art 3"}/>
           </div> 
       </div>
 

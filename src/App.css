@@ -33,6 +33,17 @@
   padding: 10px;
 }
 
+.list{
+  width:90%;
+  margin: auto;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 150px;
+  row-gap: 50px;
+}
+
 .App-link {
   color: #61dafb;
 }

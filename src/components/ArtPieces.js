@@ -16,14 +16,14 @@ function ArtPieces( {percent, setPercent, art } ) {
             </div>
             <div className='votes'>
                 <Button
-                onClick={()=> {}}
+                onClick={()=> {setPercent(percent + 1)}}
                 text="up"
                 theme="primary"
                 type="button"
                 />
 
                 <Button
-                onClick={()=> {}}
+                onClick={()=> {setPercent(percent - 1)}}
                 text="down"
                 theme="primary"
                 type="button"
